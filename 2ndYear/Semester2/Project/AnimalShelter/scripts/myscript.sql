@@ -1,0 +1,22 @@
+create schema MYANIMALSHELTER
+CREATE TABLE MYANIMALSHELTER.AnimalTable (ID INTEGER NOT NULL, 
+	Age INTEGER NOT NULL,
+	Name VARCHAR(10), 
+    AType VARCHAR(10) NOT NULL,
+   	Breed VARCHAR(10) NOT NULL,
+   	AnimalCat VARCHAR(5), 
+   	Adoption VARCHAR(5),
+    Gender VARCHAR(6) DEFAULT 'female',
+    Description VARCHAR(20),
+    PRIMARY KEY (ID));
+
+CREATE TABLE MYANIMALSHELTER.AnimalTable (ID INTEGER NOT NULL, 
+	Age INTEGER NOT NULL,
+	Name VARCHAR(10), 
+    AType VARCHAR(10) NOT NULL,
+   	Breed VARCHAR(20) NOT NULL,
+   	AnimalCat VARCHAR(5), 
+   	Adoption VARCHAR(5),
+    Gender BOOLEAN DEFAULT 'female',
+    Description VARCHAR(20),
+    PRIMARY KEY (ID));
